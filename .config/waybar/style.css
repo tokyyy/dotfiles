@@ -1,0 +1,101 @@
+* {
+    font-size: 13px;
+    font-family: "Maple Mono NF";
+    color: rgba(151,177,166,1);
+}
+
+window#waybar {
+  background-color: rgba(35,55,55,1);
+  border-radius: 10px;
+}
+
+#custom-logo {
+  padding: 0 10px;
+  font-size: 22px;
+  color: rgba(76,110,180,255);
+}
+
+#battery,
+#bluetooth,
+#pulseaudio,
+#network,
+#disk,
+#memory,
+#cpu,
+#temperature,
+#tray,
+#window,
+#clock {
+  padding: 2px 8px;
+  margin: 6px 3px;
+  background-color: rgba(40,70,70,1);
+  border-radius: 8px;
+}
+
+#battery {
+  margin: 6px 6px 6px 3px;
+}
+
+#battery:hover,
+#bluetooth:hover,
+#pulseaudio:hover,
+#network:hover,
+#disk:hover,
+#memory:hover,
+#cpu:hover,
+#temperature:hover,
+#tray:hover,
+#window:hover,
+#clock:hover {
+  background-color: rgba(20,40,40,1);;
+}
+
+#workspaces button {
+  background-color: rgba(40,70,70,1);
+  margin: 6 3px;
+  padding: 2px 8px;
+}
+
+#workspaces button.active {
+  background-color: rgba(20,40,40,1);
+  margin: 6 3px;
+  padding: 2px 8px;
+}
+
+#temperature.critical,
+#pulseaudio.muted {
+  color: #FF0000;
+  padding-top: 0;
+}
+
+#workspaces button:hover {
+  background: rgba(0,20,20,0.5);
+}
+
+#battery.charging {
+    color: #ffffff;
+    background-color: #26A65B;
+}
+
+#battery.warning:not(.charging) {
+    background-color: #ffbe61;
+    color: black;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
