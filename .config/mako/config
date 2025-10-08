@@ -1,8 +1,8 @@
 font=Maple Mono NF
-background-color=#233737ee
+background-color=#23373790
 anchor=top-right
 border-color=#799388ff
-border-radius=12
+border-radius=8
 max-icon-size=64
 icons=1
 padding=0,15,25

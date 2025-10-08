@@ -5,14 +5,14 @@
 }
 
 window#waybar {
-  background-color: rgba(35,55,55,1);
+  background-color: rgba(25,45,45,0.7);
   border-radius: 10px;
 }
 
 #custom-logo {
   padding: 0 10px;
   font-size: 22px;
-  color: rgba(76,110,180,255);
+  color: rgba(151,177,166,1);
 }
 
 #battery,
@@ -28,7 +28,7 @@ window#waybar {
 #clock {
   padding: 2px 8px;
   margin: 6px 3px;
-  background-color: rgba(40,70,70,1);
+  background-color: rgba(30,60,60,0.7);
   border-radius: 8px;
 }
 
@@ -47,29 +47,29 @@ window#waybar {
 #tray:hover,
 #window:hover,
 #clock:hover {
-  background-color: rgba(20,40,40,1);;
+  background-color: rgba(20,40,40,0.7);;
 }
 
 #workspaces button {
-  background-color: rgba(40,70,70,1);
+  background-color: rgba(30,60,60,0.7);
   margin: 6 3px;
   padding: 2px 8px;
 }
 
 #workspaces button.active {
-  background-color: rgba(20,40,40,1);
+  background-color: rgba(20,40,40,0.7);
   margin: 6 3px;
   padding: 2px 8px;
 }
 
 #temperature.critical,
 #pulseaudio.muted {
-  color: #FF0000;
+  color: #ff5858;
   padding-top: 0;
 }
 
 #workspaces button:hover {
-  background: rgba(0,20,20,0.5);
+  background: rgba(0,20,20,0.7);
 }
 
 #battery.charging {
@@ -83,7 +83,7 @@ window#waybar {
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
+    background-color: #ff5858;
     color: #ffffff;
     animation-name: blink;
     animation-duration: 0.5s;
